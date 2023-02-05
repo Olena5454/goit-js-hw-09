@@ -16,7 +16,6 @@ const refs = {
   arraySpanValue: document.querySelectorAll('.value'),
 };
 
-console.log(refs.divContainer);
 refs.divTimer.style.display = 'flex';
 refs.divTimer.style.gap = '20px';
 refs.inputTimer.style.fontSize = '16px';
