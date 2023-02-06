@@ -21,17 +21,16 @@ refs.startBtn.addEventListener('click', onClickStartBtn);
 refs.stopBtn.addEventListener('click', onClickStopBtn);
 
 function onClickStartBtn(e) {
-    console.log('press');
-    refs.stopBtn.removeAttribute('disabled'); 
-    refs.startBtn.setAttribute('disabled', true);
+  refs.stopBtn.removeAttribute('disabled');
+  refs.startBtn.setAttribute('disabled', true);
   changeColor();
-};
+}
 
 function onClickStopBtn(e) {
-    refs.startBtn.removeAttribute('disabled');
-    refs.stopBtn.setAttribute('disabled', true);
-    clearInterval(timerId);
-};
+  refs.startBtn.removeAttribute('disabled');
+  refs.stopBtn.setAttribute('disabled', true);
+  clearInterval(timerId);
+}
 
 function changeColor() {
   timerId = setInterval(() => {
