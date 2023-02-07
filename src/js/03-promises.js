@@ -2,7 +2,6 @@ import Notiflix from 'notiflix';
 Notiflix.Notify.init({ position: 'right-top' });
 
 const formPromiseGeneration = document.querySelector('.form');
-
 formPromiseGeneration.addEventListener('submit', onSubmitButton);
 
 function createPromise({ position, delay }) {
@@ -31,6 +30,7 @@ function onSubmitButton(e) {
     position += 1;
     delay += step;
   }
+  formPromiseGeneration.reset();
 }
 
 function onCreatePromiseSuccess({ position, delay }) {
